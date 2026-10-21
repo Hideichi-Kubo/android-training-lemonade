@@ -1,0 +1,10 @@
+# テキストファイルはリポジトリ内で LF に統一
+* text=auto
+
+# シェルスクリプトは常に LF、バッチファイルは常に CRLF
+gradlew text eol=lf
+*.bat text eol=crlf
+
+# バイナリファイル
+*.jar binary
+*.webp binary
